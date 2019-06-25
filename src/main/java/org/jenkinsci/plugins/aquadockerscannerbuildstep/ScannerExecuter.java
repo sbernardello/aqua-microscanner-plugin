@@ -71,7 +71,7 @@ public class ScannerExecuter {
 			String buildArg = "--build-arg=token=" + microScannerToken;
 			UUID uniqueId = UUID.randomUUID();
 			String uniqueIdStr = uniqueId.toString().toLowerCase();
-			args.add("docker", "build", buildArg, "--no-cache", "-t", "aqua-ms-" + uniqueIdStr);
+			args.add("docker", "build", buildArg, "--network=host" , "--no-cache", "-t", "aqua-ms-" + uniqueIdStr);
 			args.add("-f", microscannerDockerfilePath, workspace.toString());
 
 			String outFileName = "out";
