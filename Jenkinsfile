@@ -1,4 +1,3 @@
-# buildPlugin(platforms: ['linux'])
 
 node () {
 
