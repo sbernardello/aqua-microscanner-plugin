@@ -1,1 +1,20 @@
-buildPlugin(platforms: ['linux'])
+# buildPlugin(platforms: ['linux'])
+
+node () {
+
+  stage ('Checkout') {
+    steps {
+      checkout scm
+    }
+  }
+
+  stage('package') {
+    steps {
+      sh '''
+
+        mvn package -e
+
+      '''
+    }
+  }
+}
