@@ -1,19 +1,29 @@
+pipeline {
+  agent any
 
-node () {
+  environment {
 
-  stage ('Checkout') {
-    steps {
-      checkout scm
-    }
   }
+  
+  stages {
+    stage('Checkout') {
+            steps {
+                checkout scm
+            }
+    }
 
-  stage('package') {
-    steps {
-      sh '''
+    stage('Build') {
+      steps {
+        echo "empty"
+      }
+    }
 
-        mvn package -e
-
-      '''
+    stage('Package') {
+      steps {
+        sh '''
+          mvn package -e
+        '''
+      }
     }
   }
 }
