@@ -162,7 +162,7 @@ public class AquaMicroScannerBuilder extends Builder implements SimpleBuildStep{
 			ArtifactArchiver styleArtifactArchiver = new ArtifactArchiver("styles.css");
 			styleArtifactArchiver.perform(build, workspace, launcher, listener);
 		} catch (Exception ex) {
-
+			System.out.println("Error: " + ex.getMessage());
 		}
 		
 	}
