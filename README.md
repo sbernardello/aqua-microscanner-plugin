@@ -1,3 +1,5 @@
+![](https://github.com/sbernardello/aqua-microscanner-plugin/workflows/Java%20CI/badge.svg)
+
 # Aqua Jenkins MicroScanner Plugin #
 Enables scanning of docker builds in Jenkins for OS package vulnerabilities.
 
