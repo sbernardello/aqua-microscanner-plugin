@@ -129,7 +129,7 @@
     <connection>scm:git:git://github.com/sbernardello/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:sbernardello/${project.artifactId}-plugin.git</developerConnection>
     <url>http://github.com/sbernardello/${project.artifactId}-plugin</url>
-    <tag>aqua-microscanner-1.0.0</tag>
+    <tag>aqua-microscanner-1.0.8-SNAPSHOT</tag>
   </scm>
 
   <distributionManagement>
